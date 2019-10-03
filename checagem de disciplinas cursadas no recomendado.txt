@@ -1,0 +1,372 @@
+Disciplina: FISICA APLICADA A COMPUTACAO I 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: FISICA APLICADA A COMPUTACAO II 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: ALGEBRA LIN GEO ANALITICA 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: CALCULO DIFERENCIAL E INTEGRAL III 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: CALCULO DIFERENCIAL E INTEGRAL I 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: CALCULO DIFERENCIAL E INTEGRAL II 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: CALCULO NUMERICO 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: INTRODUCAO AO COMPUTADOR 
+
+Porcentagem pago no recomendado: 0.958904109589041
+Porcentagem não pago no recomendado: 0.0410958904109589
+-------------------------------------------------------
+
+Disciplina: INTRODUCAO A PROGRAMACAO 
+
+Porcentagem pago no recomendado: 0.8721461187214612
+Porcentagem não pago no recomendado: 0.1278538812785388
+-------------------------------------------------------
+
+Disciplina: CALCULO VET GEO ANALITICA 
+
+Porcentagem pago no recomendado: 0.863013698630137
+Porcentagem não pago no recomendado: 0.136986301369863
+-------------------------------------------------------
+
+Disciplina: CALCULO DIFERENCIAL E INTEGRAL I 
+
+Porcentagem pago no recomendado: 0.821917808219178
+Porcentagem não pago no recomendado: 0.1780821917808219
+-------------------------------------------------------
+
+Disciplina: FISICA APLICADA A COMPUTACAO I 
+
+Porcentagem pago no recomendado: 0.7853881278538812
+Porcentagem não pago no recomendado: 0.2146118721461187
+-------------------------------------------------------
+
+Disciplina: LOGICA APLC A COMPUTACAO 
+
+Porcentagem pago no recomendado: 0.7692307692307693
+Porcentagem não pago no recomendado: 0.23076923076923078
+-------------------------------------------------------
+
+Disciplina: CIRCUITOS LOGICOS 
+
+Porcentagem pago no recomendado: 0.6894977168949772
+Porcentagem não pago no recomendado: 0.3105022831050228
+-------------------------------------------------------
+
+Disciplina: LINGUAGEM PROGRAMACAO I 
+
+Porcentagem pago no recomendado: 0.680365296803653
+Porcentagem não pago no recomendado: 0.319634703196347
+-------------------------------------------------------
+
+Disciplina: FISICA APLICADA A COMPUTACAO II 
+
+Porcentagem pago no recomendado: 0.5688073394495413
+Porcentagem não pago no recomendado: 0.43119266055045874
+-------------------------------------------------------
+
+Disciplina: CIRCUITOS LOGICOS 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: ESTAGIO SUPERVISIONADO 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: LOGICA APLICADA A COMPUTACAO 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: METODOLOGIA DO TRABALHO CIENTIFICO 
+
+Porcentagem pago no recomendado: 0.6912442396313364
+Porcentagem não pago no recomendado: 0.3087557603686636
+-------------------------------------------------------
+
+Disciplina: TEORIA DA COMPUTACAO 
+
+Porcentagem pago no recomendado: 0.663594470046083
+Porcentagem não pago no recomendado: 0.33640552995391704
+-------------------------------------------------------
+
+Disciplina: ARQUITETURA DE COMPUTADORES I 
+
+Porcentagem pago no recomendado: 0.639269406392694
+Porcentagem não pago no recomendado: 0.3607305936073059
+-------------------------------------------------------
+
+Disciplina: ESTRUTURA DE DADOS 
+
+Porcentagem pago no recomendado: 0.5668202764976958
+Porcentagem não pago no recomendado: 0.43317972350230416
+-------------------------------------------------------
+
+Disciplina: CALCULO DIFERENCIAL E INTEGRAL II 
+
+Porcentagem pago no recomendado: 0.5525114155251142
+Porcentagem não pago no recomendado: 0.4474885844748858
+-------------------------------------------------------
+
+Disciplina: LINGUAGENS FORMAIS E AUTOMATOS 
+
+Porcentagem pago no recomendado: 0.543778801843318
+Porcentagem não pago no recomendado: 0.45622119815668205
+-------------------------------------------------------
+
+Disciplina: INTRODUCAO A ALGEBRA LINEAR 
+
+Porcentagem pago no recomendado: 0.5409090909090909
+Porcentagem não pago no recomendado: 0.4590909090909091
+-------------------------------------------------------
+
+Disciplina: PESQUISA APLICADA A COMPUTACAO 
+
+Porcentagem pago no recomendado: 0.5299539170506913
+Porcentagem não pago no recomendado: 0.4700460829493088
+-------------------------------------------------------
+
+Disciplina: ESPECIFICACAO DE REQUISITOS DE SOFTWARE 
+
+Porcentagem pago no recomendado: 0.4930875576036866
+Porcentagem não pago no recomendado: 0.5069124423963134
+-------------------------------------------------------
+
+Disciplina: ARQUITETURA DE COMPUTADORES II 
+
+Porcentagem pago no recomendado: 0.4700460829493088
+Porcentagem não pago no recomendado: 0.5299539170506913
+-------------------------------------------------------
+
+Disciplina: SISTEMAS OPERACIONAIS I 
+
+Porcentagem pago no recomendado: 0.41743119266055045
+Porcentagem não pago no recomendado: 0.5825688073394495
+-------------------------------------------------------
+
+Disciplina: LINGUAGEM PROGRAMACAO II 
+
+Porcentagem pago no recomendado: 0.4155251141552511
+Porcentagem não pago no recomendado: 0.5844748858447488
+-------------------------------------------------------
+
+Disciplina: ADM DE EMPRESAS 
+
+Porcentagem pago no recomendado: 0.4055299539170507
+Porcentagem não pago no recomendado: 0.5944700460829493
+-------------------------------------------------------
+
+Disciplina: PARADIGMAS DE LING DE PROGRAMAÇÃO 
+
+Porcentagem pago no recomendado: 0.4009216589861751
+Porcentagem não pago no recomendado: 0.5990783410138248
+-------------------------------------------------------
+
+Disciplina: ORDENACAO E RECUPERACAO DE DADOS 
+
+Porcentagem pago no recomendado: 0.39631336405529954
+Porcentagem não pago no recomendado: 0.6036866359447005
+-------------------------------------------------------
+
+Disciplina: IINTRODUÇÃO A COMPUTAÇÃO GRÁFICA 
+
+Porcentagem pago no recomendado: 0.3870967741935484
+Porcentagem não pago no recomendado: 0.6129032258064516
+-------------------------------------------------------
+
+Disciplina: IINTRODUÇÃO A COMPUTAÇÃO GRÁFICA 
+
+Porcentagem pago no recomendado: 0.3870967741935484
+Porcentagem não pago no recomendado: 0.6129032258064516
+-------------------------------------------------------
+
+Disciplina: CALCULO DIF  E INTEGRAL III 
+
+Porcentagem pago no recomendado: 0.3789954337899543
+Porcentagem não pago no recomendado: 0.6210045662100456
+-------------------------------------------------------
+
+Disciplina: METODOS DE PROJETO DE SOFTWARE 
+
+Porcentagem pago no recomendado: 0.3778801843317972
+Porcentagem não pago no recomendado: 0.6221198156682027
+-------------------------------------------------------
+
+Disciplina: ADM SIST DE INFORMACOES 
+
+Porcentagem pago no recomendado: 0.3548387096774194
+Porcentagem não pago no recomendado: 0.6451612903225806
+-------------------------------------------------------
+
+Disciplina: ENGENHARIA DE SOFTWARE 
+
+Porcentagem pago no recomendado: 0.3470319634703196
+Porcentagem não pago no recomendado: 0.6529680365296804
+-------------------------------------------------------
+
+Disciplina: SISTEMA DE INFORMACAO E DECISAO 
+
+Porcentagem pago no recomendado: 0.3394495412844037
+Porcentagem não pago no recomendado: 0.6605504587155964
+-------------------------------------------------------
+
+Disciplina: CALCULO NUMERICO 
+
+Porcentagem pago no recomendado: 0.3242009132420091
+Porcentagem não pago no recomendado: 0.6757990867579908
+-------------------------------------------------------
+
+Disciplina: INTRODUCAO AO PROC DIGITAL DE IMAGENS 
+
+Porcentagem pago no recomendado: 0.3087557603686636
+Porcentagem não pago no recomendado: 0.6912442396313364
+-------------------------------------------------------
+
+Disciplina: BANCO DE DADOS I 
+
+Porcentagem pago no recomendado: 0.271889400921659
+Porcentagem não pago no recomendado: 0.728110599078341
+-------------------------------------------------------
+
+Disciplina: INTRODUCAO A INTELIGENCIA ARTIFICIAL 
+
+Porcentagem pago no recomendado: 0.271889400921659
+Porcentagem não pago no recomendado: 0.728110599078341
+-------------------------------------------------------
+
+Disciplina: INTERACAO HOMEMMAQUINA 
+
+Porcentagem pago no recomendado: 0.2488479262672811
+Porcentagem não pago no recomendado: 0.7511520737327189
+-------------------------------------------------------
+
+Disciplina: INTERACAO HOMEMMAQUINA 
+
+Porcentagem pago no recomendado: 0.2488479262672811
+Porcentagem não pago no recomendado: 0.7511520737327189
+-------------------------------------------------------
+
+Disciplina: COMPUTADORES E SOCIEDADE 
+
+Porcentagem pago no recomendado: 0.2465753424657534
+Porcentagem não pago no recomendado: 0.7534246575342466
+-------------------------------------------------------
+
+Disciplina: REDES DE COMPUTADORES I 
+
+Porcentagem pago no recomendado: 0.2350230414746544
+Porcentagem não pago no recomendado: 0.7649769585253456
+-------------------------------------------------------
+
+Disciplina: TRABALHO DE CONCLUSAO DE CURSO 
+
+Porcentagem pago no recomendado: 0.20276497695852536
+Porcentagem não pago no recomendado: 0.7972350230414746
+-------------------------------------------------------
+
+Disciplina: MODELOS PROBABILÍSTICOS P COMPUTAÇÃO 
+
+Porcentagem pago no recomendado: 0.1893491124260355
+Porcentagem não pago no recomendado: 0.8106508875739645
+-------------------------------------------------------
+
+Disciplina: ADMINISTRACAO DE SISTEMAS DE INFORMACAO 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: LINGUA INGLESA I 
+
+Porcentagem pago no recomendado: 0.1598173515981735
+Porcentagem não pago no recomendado: 0.8401826484018264
+-------------------------------------------------------
+
+Disciplina: CALCULO NUMERICO 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: ESTÁGIO SUPERVISIONADO 
+
+Porcentagem pago no recomendado: 0.20276497695852536
+Porcentagem não pago no recomendado: 0.7972350230414746
+-------------------------------------------------------
+
+Disciplina: CONSTRUCAO DE COMPILADORES I 
+
+Porcentagem pago no recomendado: 0.1917808219178082
+Porcentagem não pago no recomendado: 0.8082191780821918
+-------------------------------------------------------
+
+Disciplina: ANALISE E PROJETO DE ALGORITMOS 
+
+Porcentagem pago no recomendado: 0.15207373271889402
+Porcentagem não pago no recomendado: 0.847926267281106
+-------------------------------------------------------
+
+Disciplina: SERIES E EQUACOES DIF ORDINARIAS 
+
+Porcentagem pago no recomendado: 0.13559322033898305
+Porcentagem não pago no recomendado: 0.864406779661017
+-------------------------------------------------------
+
+Disciplina: ARQUITETURA DE COMPUTADORES II 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: CONSTRUÇÃO DE COMPILADORES I 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: INTRODUÇÃO AO PROCESSAMENTO DIGITAL DE IMAGENS 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
+Disciplina: REDES DE COMPUTADORES I 
+
+Porcentagem pago no recomendado: nan
+Porcentagem não pago no recomendado: nan
+-------------------------------------------------------
+
