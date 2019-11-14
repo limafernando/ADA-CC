@@ -2,7 +2,11 @@
 Biblioteca para centralizar funções com objetivo de extrair os padrões/dados dos fluxos reais dos alunos
 """
 
-from util import retorna_tempo_graduacao
+import sys
+
+sys.path.insert(1, '/home/luiz/ufpb/tcc/ADA.CC/src/')
+
+from controller import controlador_dados
 
 def porcentagem_por_periodo(alunos_nao_rec, discentes_depois, matriculas_realizadas, codigo_disciplina, periodo_rec):
     """
@@ -32,7 +36,7 @@ def porcentagem_por_periodo(alunos_nao_rec, discentes_depois, matriculas_realiza
         periodo_matricula = aux['periodo_matricula'].iloc[0]
         periodo_ingresso = discentes_depois[discentes_depois['matricula'] == aluno]['periodo_ingresso'].iloc[0]
 
-        periodo_cursou = retorna_tempo_graduacao(periodo_ingresso, periodo_matricula)
+        periodo_cursou = controlador_dados.retorna_tempo_graduacao(periodo_ingresso, periodo_matricula)
 
         indice = periodo_cursou-1
 

@@ -1,40 +1,17 @@
 '''
-Biblioteca para centralizar requisições recorrentes às bases de dados
+Biblioteca para centralizar requisições recorrentes à base de dados
+Como filtro de parte da base e cálculo de tempo de conclusão
 '''
 
 import pandas as pd
 from math import modf, inf
 from statistics import mean, median, mode, stdev, variance
 
-def retorna_caminho():
-    '''
-    retorna o caminho para acessar as bases de dados
-    '''
-    return 'bd/2019_02_COMPUTACAO_CONCLUINTES/'
+import sys
 
-def retorna_discentes():
-    '''
-    retorna o dataframe de discentes
-    '''
-    return pd.read_csv(retorna_caminho() + 'discentes.csv')
+sys.path.insert(1, '/home/luiz/ufpb/tcc/ADA.CC/src/')
 
-def retorna_componentes():
-    '''
-    retorna o dataframe de componentes
-    '''
-    return pd.read_csv(retorna_caminho() + 'componentes_curriculares.csv')
-
-def retorna_componentes_com_semestre():
-    '''
-    retorna o dataframe de componentes
-    '''
-    return pd.read_csv(retorna_caminho() + 'componentes_curriculares_com_semestre.csv')
-
-def retorna_matriculas():
-    '''
-    retorna o dataframe de matriculas
-    '''
-    return pd.read_csv(retorna_caminho() + 'matriculas.csv')
+from model import gerenciador_dados
 
 def retorna_discentes_antes(discentes=pd.DataFrame):
     '''
@@ -43,7 +20,7 @@ def retorna_discentes_antes(discentes=pd.DataFrame):
     '''
     
     if discentes.empty: #se o parâmetro for vazio
-        discentes = retorna_discentes()
+        discentes = gerenciador_dados.retorna_discentes()
         return discentes[discentes['periodo_ingresso'] < 2006]
 
     else: #caso contrário, o dataframe foi passado como parâmetro
@@ -56,7 +33,7 @@ def retorna_discentes_depois(discentes=pd.DataFrame):
     '''
 
     if discentes.empty: #se o parâmetro for vazio
-        discentes = retorna_discentes()
+        discentes = gerenciador_dados.retorna_discentes()
         return discentes[discentes['periodo_ingresso'] > 2006]
 
     else: #caso contrário, o dataframe foi passado como parâmetro
@@ -93,7 +70,7 @@ def retorna_lista_tempo_graduacao(discentes=pd.DataFrame()):
     '''
 
     if discentes.empty: #se o parâmetro for vazio
-        discentes = retorna_discentes()
+        discentes = gerenciador_dados.retorna_discentes()
     
     auxDF = pd.DataFrame() #dataframe auxiliar para a iteração
     auxDF['ingresso'] = discentes['periodo_ingresso'] #vai possuir a coluna de semestre de ingresso
@@ -107,18 +84,6 @@ def retorna_lista_tempo_graduacao(discentes=pd.DataFrame()):
         tempos.append(retorna_tempo_graduacao(ingresso=ingresso, conclusao=conclusao))
 
     return tempos
-
-def exibe_estatisticas(conteudo):
-    '''
-    dada uma lista de dados, por exemplo, tempo ou cra, exibe os dados estatísticos
-    '''
-    print('mínimo: {} \nmáximo: {}'.format(min(conteudo), max(conteudo)))
-    
-    try:
-        print('média: {} \nmediana: {}  \nmoda: {} \ndesvia padrão: {} \nvariância: {}'.format(mean(conteudo), median(conteudo), mode(conteudo), stdev(conteudo), variance(conteudo)))
-    except:
-        print('!mais de um valor pra moda!')
-        print('média: {} \nmediana: {}  \ndesvio padrão: {} \nvariância: {}'.format(mean(conteudo), median(conteudo), stdev(conteudo), variance(conteudo)))
 
 def funcao_filtro_intervalo(elemento):
     '''
@@ -143,13 +108,6 @@ def filtra_tempo_valido(tempos, tipo):
 
     elif tipo == 'intervalo':
         return list(filter(funcao_filtro_intervalo, tempos))
-
-def calcula_porcentagem(universo, amostra):
-    '''
-    função "genérica" para calcular a porcentagem
-    '''
-    
-    return amostra/universo
 
 def checa_disciplinas_duplicadas(componentes):
     '''
@@ -180,6 +138,24 @@ def checa_disciplinas_duplicadas(componentes):
     else:
         print('Sem disciplinas duplicadas')
 
+def checa_disciplinas_nao_cursadas(codigos_matriculados):
+    '''checa se todas as disciplinas no arquivo de disciplinas aparecem pelo menos uma vez aqui'''
+      
+    def funcao_filtro_disciplinas_nao_cursadas(codigo):
+        if codigo in codigos_matriculados: #se a lista foi cursada retorna false
+            return False
+        else: #se não foi, retorna true
+            return True
+    
+    disciplinas_nao_cursadas = list(filter(funcao_filtro_disciplinas_nao_cursadas, codigos_matriculados)) 
+
+    if disciplinas_nao_cursadas:
+        print("Disciplinas não cursadas: ")
+        print(disciplinas_nao_cursadas)
+    
+    else:
+        print("Todas as disciplinas foram cursadas pelo menos uma vez")
+
 def mapeia_disciplina(lista_codigos, matriculas):
 
     '''
@@ -191,8 +167,8 @@ def mapeia_disciplina(lista_codigos, matriculas):
     
     #print(lista_codigos)
 
-    componentes = retorna_componentes()
-    #matriculas = retorna_matriculas()
+    componentes = gerenciador_dados.retorna_componentes()
+    #matriculas = gerenciador_dados.retorna_matriculas()
     ch_min = inf
     codigo_final = ''
     
@@ -375,3 +351,23 @@ def filtra_alunos(aprovacoes_primeira_disciplina, aprovacoes_segunda_disciplina)
 
     else:
         return aprovacoes_primeira_disciplina, aprovacoes_segunda_disciplina
+
+def mapeia_discente_matriculas(matriculas_discentes, matriculas_realizadas):
+
+    relacao_discente_matriculas = {}
+
+    for matricula in matriculas_discentes:
+        aux = str(matricula)
+        relacao_discente_matriculas[matricula] = matriculas_realizadas.query('matricula == ' + aux)
+
+    return relacao_discente_matriculas
+
+def exibe_alunos_nao_rec(alunos_nao_rec, discentes_depois, codigo, matriculas_geral):
+    
+    for aluno in alunos_nao_rec:
+        print(discentes_depois[discentes_depois['matricula'] == aluno])
+        aux = matriculas_geral[matriculas_geral['matricula'] == aluno]
+        aux = aux[aux['codigo_componente'] == codigo]
+        print(aux)
+    
+        print()
