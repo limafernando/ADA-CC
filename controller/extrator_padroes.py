@@ -1,6 +1,4 @@
-"""
-Biblioteca para centralizar funções com objetivo de extrair os padrões/dados dos fluxos reais dos alunos
-"""
+# Biblioteca para centralizar funções com objetivo de extrair os padrões/dados dos fluxos reais dos alunos
 
 import sys
 

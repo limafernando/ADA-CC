@@ -1,3 +1,5 @@
+# Biblioteca para centralizar requisições de geração de relatórios
+
 import sys
 
 sys.path.insert(1, '/home/luiz/ufpb/tcc/ADA.CC/src/')
@@ -5,7 +7,16 @@ sys.path.insert(1, '/home/luiz/ufpb/tcc/ADA.CC/src/')
 from controller import controlador_dados
 
 def relatorio_repeticao_em_disciplinas(matriculas_discentes, codigos_disciplinas, relacao_discente_matriculas, disciplinas):
+    """Função que percorre os dados analisando e adicionando em um arquivo
+    quantas vezes um aluno tentou cursar uma disciplina
     
+    Arguments:
+        matriculas_discentes {DataFrame} -- DataFrame com os dados de matrículas dos alunos em disciplinas
+        codigos_disciplinas {list} -- Lista de códigos das disciplinas cursadas
+        relacao_discente_matriculas {dict} -- Dicionário com a relação entre discentes (chave) e disciplinas (valores)
+        disciplinas {DataFrame} -- DataFrame com os dados de disciplinas
+    """
+
     relatorio = open('checagem de repetição em disciplina.txt', 'r+')
 
     if relatorio.readlines():
@@ -44,8 +55,23 @@ def relatorio_repeticao_em_disciplinas(matriculas_discentes, codigos_disciplinas
 
         print('Relatório gerado')
 
-def relatorio_alunos_rec_nao_rec(discentes_depois, codigos_disciplinas, matriculas_realizadas, matriculas_discentes, disciplinas):
+def relatorio_alunos_rec_nao_rec(discentes, codigos_disciplinas, matriculas_realizadas, matriculas_discentes, disciplinas):
+    """Função que percorre os dados analisando e adicionando em uma lista de dicionários
+    que será retornado
     
+    Arguments:
+        discentes {DataFrame} -- DataFrame com os dados dos alunos 
+        codigos_disciplinas {list} -- Lista de códigos das disciplinas cursadas
+        matriculas_realizadas {DataFrame} -- DataFrame com os dados de matrículas com situação de sucesso
+        matriculas_discentes {list} -- Lista com as matrículas dos alunos
+        disciplinas {DataFrame} -- DataFrame com as disciplinas do semestre a ser analisado
+    
+    Returns:
+        list -- Lista de dicionários, onde cada dicionário contém o nome da disciplina, as 
+        porcentagens de alunos que cursaram no recomendado e que não cursaram no recomendado e 
+        a lista das matrículas de alunos que não cursaram no recomendado 
+    """
+
     relatorio = []
 
     for codigo in codigos_disciplinas:
@@ -83,7 +109,7 @@ def relatorio_alunos_rec_nao_rec(discentes_depois, codigos_disciplinas, matricul
             else:
                     
                 periodo_matricula = row[1]['periodo_matricula']
-                periodo_ingresso = discentes_depois[discentes_depois['matricula'] == aluno]['periodo_ingresso'].iloc[0]
+                periodo_ingresso = discentes[discentes['matricula'] == aluno]['periodo_ingresso'].iloc[0]
 
                 periodo_cursou = controlador_dados.retorna_tempo_graduacao(periodo_ingresso, periodo_matricula)
 
@@ -108,7 +134,20 @@ def relatorio_alunos_rec_nao_rec(discentes_depois, codigos_disciplinas, matricul
     return relatorio
 
 def relatorio_alunos_disciplina(codigos_disciplinas, matriculas_realizadas, disciplinas, matriculas_discentes):
+    """Função que percorre os dados analisando e adicionando em uma lista de dicionários
+    que será retornado
     
+    Arguments:
+        codigos_disciplinas {list} -- Lista de códigos das disciplinas cursadas
+        matriculas_realizadas {DataFrame} -- DataFrame com os dados de matrículas com situação de sucesso
+        disciplinas {DataFrame} -- DataFrame com as disciplinas do semestre a ser analisado
+        matriculas_discentes {list} -- Lista com as matrículas dos alunos
+    
+    Returns:
+        list -- Lista de dicionários, onde cada dicionário contém o nome da disciplina e 
+        a lista das matrículas de alunos que cursaram
+    """
+
     relatorio = []
 
     for codigo in codigos_disciplinas:
